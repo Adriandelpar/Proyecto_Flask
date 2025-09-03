@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}{{ pais.nombre }} – GeoWorld{% endblock %}
+
+{% block contenido %}
+<a href="{{ url_for('lista_paises') }}" class="back-link">← Volver al listado</a>
+
+<div class="detail-card">
+  <h1>{{ pais.nombre }}</h1>
+  <span class="badge">{{ pais.continente }}</span>
+
+  {# TODO: añadir secciones de información general, capital y ciudades #}
+
+</div>
+{% endblock %}

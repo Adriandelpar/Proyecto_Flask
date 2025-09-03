@@ -4,7 +4,7 @@
 
 {% block contenido %}
 <section class="hero">
-  <a href="#">
+  <a href="{{ url_for('lista_paises') }}">
     <img src="{{ url_for('static', filename='logo.svg') }}" alt="GeoWorld logo" class="hero-logo">
     <p class="hero-hint">Haz clic para explorar los países</p>
   </a>

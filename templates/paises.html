@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block titulo %}GeoWorld – Países{% endblock %}
+
+{% block contenido %}
+<h1>Países del mundo</h1>
+
+<form class="search-form" method="GET" action="{{ url_for('lista_paises') }}">
+
+  <input
+    type="text"
+    name="nombre"
+    placeholder="Buscar por nombre..."
+    value="{{ nombre_q }}"
+  >
+
+  <select name="continente">
+    <option value="">Todos los continentes</option>
+    {% for c in continentes %}
+      <option value="{{ c }}" {% if c == continente_q %}selected{% endif %}>{{ c }}</option>
+    {% endfor %}
+  </select>
+
+  <select name="orden">
+    <option value="asc"  {% if orden == 'asc'  %}selected{% endif %}>A → Z</option>
+    <option value="desc" {% if orden == 'desc' %}selected{% endif %}>Z → A</option>
+  </select>
+
+  <button type="submit">Buscar</button>
+</form>
+
+{% if paises %}
+  <p class="result-count">{{ paises|length }} resultado(s)</p>
+  <table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Continente</th>
+        <th>Capital</th>
+        <th>Detalle</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in paises %}
+      <tr>
+        <td>{{ p.nombre }}</td>
+        <td>{{ p.continente }}</td>
+        <td>{{ p.capital.nombre }}</td>
+        <td><a href="{{ url_for('detalle_pais', pais_id=p.id) }}">Ver más →</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p class="no-results">No se encontraron resultados.</p>
+{% endif %}
+{% endblock %}
