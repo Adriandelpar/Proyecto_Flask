@@ -1,0 +1,258 @@
+{
+  "localidades": [
+    {
+      "info": {
+        "continente": "Europa",
+        "pais": {
+          "nombre": "España",
+          "idiomas": ["Español", "Catalán", "Gallego"],
+          "moneda": {"nombre": "Euro", "simbolo": "€"},
+          "capital": {
+            "nombre": "Madrid",
+            "poblacion": 3200000,
+            "ciudades_importantes": [
+              {"nombre": "Barcelona", "poblacion": 1600000, "barrios": ["Gràcia", "Eixample"]},
+              {"nombre": "Valencia", "poblacion": 800000, "barrios": ["Ruzafa", "El Carmen"]},
+              {"nombre": "Sevilla", "poblacion": 700000, "barrios": ["Triana", "Nervión"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Europa",
+        "pais": {
+          "nombre": "Alemania",
+          "idiomas": ["Alemán"],
+          "moneda": {"nombre": "Euro", "simbolo": "€"},
+          "capital": {
+            "nombre": "Berlín",
+            "poblacion": 3600000,
+            "ciudades_importantes": [
+              {"nombre": "Hamburgo", "poblacion": 1800000, "barrios": ["Altona", "St. Pauli"]},
+              {"nombre": "Múnich", "poblacion": 1500000, "barrios": ["Schwabing", "Glockenbach"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Europa",
+        "pais": {
+          "nombre": "Francia",
+          "idiomas": ["Francés"],
+          "moneda": {"nombre": "Euro", "simbolo": "€"},
+          "capital": {
+            "nombre": "París",
+            "poblacion": 2100000,
+            "ciudades_importantes": [
+              {"nombre": "Marsella", "poblacion": 870000, "barrios": ["Le Panier", "La Joliette"]},
+              {"nombre": "Lyon", "poblacion": 500000, "barrios": ["Vieux Lyon", "La Croix-Rousse"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Europa",
+        "pais": {
+          "nombre": "Italia",
+          "idiomas": ["Italiano"],
+          "moneda": {"nombre": "Euro", "simbolo": "€"},
+          "capital": {
+            "nombre": "Roma",
+            "poblacion": 2800000,
+            "ciudades_importantes": [
+              {"nombre": "Milán", "poblacion": 1400000, "barrios": ["Brera", "Navigli"]},
+              {"nombre": "Nápoles", "poblacion": 960000, "barrios": ["Vomero", "Chiaia"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Europa",
+        "pais": {
+          "nombre": "Portugal",
+          "idiomas": ["Portugués"],
+          "moneda": {"nombre": "Euro", "simbolo": "€"},
+          "capital": {
+            "nombre": "Lisboa",
+            "poblacion": 504000,
+            "ciudades_importantes": [
+              {"nombre": "Oporto", "poblacion": 231000, "barrios": ["Ribeira", "Foz do Douro"]},
+              {"nombre": "Braga", "poblacion": 193000, "barrios": ["Sé", "Maximinos"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Asia",
+        "pais": {
+          "nombre": "Japón",
+          "idiomas": ["Japonés"],
+          "moneda": {"nombre": "Yen", "simbolo": "¥"},
+          "capital": {
+            "nombre": "Tokio",
+            "poblacion": 13900000,
+            "ciudades_importantes": [
+              {"nombre": "Osaka", "poblacion": 2700000, "barrios": ["Namba", "Umeda"]},
+              {"nombre": "Kioto", "poblacion": 1500000, "barrios": ["Gion", "Arashiyama"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Asia",
+        "pais": {
+          "nombre": "China",
+          "idiomas": ["Chino mandarín"],
+          "moneda": {"nombre": "Yuan", "simbolo": "¥"},
+          "capital": {
+            "nombre": "Pekín",
+            "poblacion": 21500000,
+            "ciudades_importantes": [
+              {"nombre": "Shanghái", "poblacion": 26000000, "barrios": ["Pudong", "The Bund"]},
+              {"nombre": "Shenzhen", "poblacion": 17500000, "barrios": ["Nanshan", "Futian"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "Asia",
+        "pais": {
+          "nombre": "India",
+          "idiomas": ["Hindi", "Inglés"],
+          "moneda": {"nombre": "Rupia india", "simbolo": "₹"},
+          "capital": {
+            "nombre": "Nueva Delhi",
+            "poblacion": 32000000,
+            "ciudades_importantes": [
+              {"nombre": "Mumbai", "poblacion": 20000000, "barrios": ["Colaba", "Bandra"]},
+              {"nombre": "Bangalore", "poblacion": 12000000, "barrios": ["Whitefield", "Indiranagar"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "América del Norte",
+        "pais": {
+          "nombre": "Estados Unidos",
+          "idiomas": ["Inglés"],
+          "moneda": {"nombre": "Dólar", "simbolo": "$"},
+          "capital": {
+            "nombre": "Washington DC",
+            "poblacion": 705000,
+            "ciudades_importantes": [
+              {"nombre": "Nueva York", "poblacion": 8400000, "barrios": ["Manhattan", "Brooklyn"]},
+              {"nombre": "Los Ángeles", "poblacion": 3900000, "barrios": ["Hollywood", "Venice"]},
+              {"nombre": "Chicago", "poblacion": 2700000, "barrios": ["Lincoln Park", "Hyde Park"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "América del Norte",
+        "pais": {
+          "nombre": "Canadá",
+          "idiomas": ["Inglés", "Francés"],
+          "moneda": {"nombre": "Dólar canadiense", "simbolo": "$"},
+          "capital": {
+            "nombre": "Ottawa",
+            "poblacion": 1000000,
+            "ciudades_importantes": [
+              {"nombre": "Toronto", "poblacion": 2900000, "barrios": ["Downtown", "Scarborough"]},
+              {"nombre": "Vancouver", "poblacion": 675000, "barrios": ["Gastown", "Kitsilano"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "América del Sur",
+        "pais": {
+          "nombre": "Brasil",
+          "idiomas": ["Portugués"],
+          "moneda": {"nombre": "Real", "simbolo": "R$"},
+          "capital": {
+            "nombre": "Brasilia",
+            "poblacion": 3050000,
+            "ciudades_importantes": [
+              {"nombre": "São Paulo", "poblacion": 12300000, "barrios": ["Moema", "Pinheiros"]},
+              {"nombre": "Río de Janeiro", "poblacion": 6700000, "barrios": ["Copacabana", "Ipanema"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "América del Sur",
+        "pais": {
+          "nombre": "Chile",
+          "idiomas": ["Español"],
+          "moneda": {"nombre": "Peso chileno", "simbolo": "$"},
+          "capital": {
+            "nombre": "Santiago",
+            "poblacion": 6000000,
+            "ciudades_importantes": [
+              {"nombre": "Valparaíso", "poblacion": 967000, "barrios": ["Cerro Alegre", "Cerro Concepción"]},
+              {"nombre": "Concepción", "poblacion": 720000, "barrios": ["Centro", "Talcahuano"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "África",
+        "pais": {
+          "nombre": "Nigeria",
+          "idiomas": ["Inglés"],
+          "moneda": {"nombre": "Naira", "simbolo": "₦"},
+          "capital": {
+            "nombre": "Abuya",
+            "poblacion": 3000000,
+            "ciudades_importantes": [
+              {"nombre": "Lagos", "poblacion": 15000000, "barrios": ["Ikeja", "Victoria Island"]},
+              {"nombre": "Kano", "poblacion": 4000000, "barrios": ["Fagge", "Nassarawa"]}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "info": {
+        "continente": "África",
+        "pais": {
+          "nombre": "Egipto",
+          "idiomas": ["Árabe"],
+          "moneda": {"nombre": "Libra egipcia", "simbolo": "£"},
+          "capital": {
+            "nombre": "El Cairo",
+            "poblacion": 20000000,
+            "ciudades_importantes": [
+              {"nombre": "Alejandría", "poblacion": 5000000, "barrios": ["Montaza", "Smouha"]},
+              {"nombre": "Giza", "poblacion": 9000000, "barrios": ["Dokki", "Mohandessin"]}
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

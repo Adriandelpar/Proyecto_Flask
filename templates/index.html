@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block titulo %}GeoWorld – Inicio{% endblock %}
+
+{% block contenido %}
+<section class="hero">
+  <a href="#">
+    <img src="{{ url_for('static', filename='logo.svg') }}" alt="GeoWorld logo" class="hero-logo">
+    <p class="hero-hint">Haz clic para explorar los países</p>
+  </a>
+</section>
+{% endblock %}

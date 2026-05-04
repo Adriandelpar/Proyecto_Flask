@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Globe circle -->
+  <circle cx="100" cy="100" r="85" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <!-- Meridians -->
+  <ellipse cx="100" cy="100" rx="40" ry="85" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
+  <ellipse cx="100" cy="100" rx="70" ry="85" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
+  <!-- Parallels -->
+  <line x1="15" y1="100" x2="185" y2="100" stroke="#93c5fd" stroke-width="1.5"/>
+  <ellipse cx="100" cy="65"  rx="72" ry="18" fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+  <ellipse cx="100" cy="135" rx="72" ry="18" fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+  <!-- Pin -->
+  <circle cx="100" cy="88" r="10" fill="#2563eb"/>
+  <line x1="100" y1="98" x2="100" y2="118" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="100" y="162" text-anchor="middle" font-family="Segoe UI, sans-serif"
+        font-size="20" font-weight="700" fill="#1e293b">GeoWorld</text>
+</svg>
