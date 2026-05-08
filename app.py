@@ -23,9 +23,9 @@ def index():
 
 @app.route("/paises")
 def lista_paises():
-    nombre_q     = request.args.get("nombre", "").strip()
+    nombre_q  = request.args.get("nombre", "").strip()
     continente_q = request.args.get("continente", "")
-    orden        = request.args.get("orden", "asc")
+    orden = request.args.get("orden", "asc")
 
     resultados = paises
 

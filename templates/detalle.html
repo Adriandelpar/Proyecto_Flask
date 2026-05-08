@@ -9,7 +9,45 @@
   <h1>{{ pais.nombre }}</h1>
   <span class="badge">{{ pais.continente }}</span>
 
-  {# TODO: añadir secciones de información general, capital y ciudades #}
+  <div class="detail-grid">
 
+    <div class="detail-section">
+      <h2>Información general</h2>
+      <ul>
+        <li><strong>Idiomas:</strong> {{ pais.idiomas | join(", ") }}</li>
+        <li><strong>Moneda:</strong> {{ pais.moneda.nombre }} ({{ pais.moneda.simbolo }})</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h2>Capital: {{ pais.capital.nombre }}</h2>
+      <ul>
+        <li><strong>Población:</strong> {{ "{:,}".format(pais.capital.poblacion) }} hab.</li>
+      </ul>
+    </div>
+
+    <div class="detail-section full-width">
+      <h2>Ciudades importantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Ciudad</th>
+            <th>Población</th>
+            <th>Barrios destacados</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for ciudad in pais.capital.ciudades_importantes %}
+          <tr>
+            <td>{{ ciudad.nombre }}</td>
+            <td>{{ "{:,}".format(ciudad.poblacion) }} hab.</td>
+            <td>{{ ciudad.barrios | join(", ") }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
 </div>
 {% endblock %}
