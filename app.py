@@ -26,6 +26,7 @@ def lista_paises():
     nombre_q  = request.args.get("nombre", "").strip()
     continente_q = request.args.get("continente", "")
     orden = request.args.get("orden", "asc")
+    moneda_q = request.args.get("moneda", "")
 
     resultados = paises
 
@@ -35,7 +36,10 @@ def lista_paises():
     if continente_q:
         resultados = [p for p in resultados if p["continente"] == continente_q]
 
-    if not resultados:
+    if moneda_q:                                   
+        resultados = [p for p in resultados if p["moneda"]["nombre"] == moneda_q]
+    
+    if not resultados:    
         abort(404)
 
     resultados = sorted(resultados, key=lambda p: p["nombre"], reverse=(orden == "desc"))
@@ -47,6 +51,7 @@ def lista_paises():
         nombre_q=nombre_q,
         continente_q=continente_q,
         orden=orden,
+        moneda_q=moneda_q,
     )
 
 
@@ -56,6 +61,11 @@ def detalle_pais(pais_id):
     if pais is None:
         abort(404)
     return render_template("detalle.html", pais=pais)
+
+@app.route("/top")
+def top():
+    top5 = sorted(paises, key=lambda p: p["capital"]["poblacion"], reverse=True)[:5]
+    return render_template("top.html", top5=top5)
 
 
 @app.errorhandler(404)

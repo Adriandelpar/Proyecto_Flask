@@ -26,6 +26,21 @@
     <option value="desc" {% if orden == 'desc' %}selected{% endif %}>Z → A</option>
   </select>
 
+  <select name="moneda">
+    <option value="">Todas las monedas</option>
+    <option value="Euro"  {% if moneda_q == "Euro"  %}selected{% endif %}>Euro</option>
+    <option value="Dólar" {% if moneda_q == "Dólar" %}selected{% endif %}>Dólar</option>
+    <option value="Real" {% if moneda_q == "Real" %}selected{% endif %}>Real</option>
+    <option value="Dólar canadiense" {% if moneda_q == "Dólar canadiense" %}selected{% endif %}>Dólar canadiense</option>
+    <option value="Libra egipcia" {% if moneda_q == "Libra egipcia" %}selected{% endif %}>Libra egipcia</option>
+    <option value="Yuan" {% if moneda_q == "Yuan" %}selected{% endif %}>Yuan</option>
+    <option value="Peso chileno" {% if moneda_q == "Peso chileno" %}selected{% endif %}>Peso chileno</option>
+    <option value="Rupia india" {% if moneda_q == "Rupia india" %}selected{% endif %}>Rupia india</option>
+    <option value="Yen" {% if moneda_q == "Yen" %}selected{% endif %}>Yen</option>
+    <option value="Naira" {% if moneda_q == "Naira" %}selected{% endif %}>Naira</option>
+    
+</select>
+
   <button type="submit">Buscar</button>
 </form>
 
@@ -37,6 +52,7 @@
         <th>País</th>
         <th>Continente</th>
         <th>Capital</th>
+        <th> Moneda</th>
         <th>Detalle</th>
       </tr>
     </thead>
@@ -46,6 +62,7 @@
         <td>{{ p.nombre }}</td>
         <td>{{ p.continente }}</td>
         <td>{{ p.capital.nombre }}</td>
+        <td>{{ p.moneda.nombre }}</td>
         <td><a href="{{ url_for('detalle_pais', pais_id=p.id) }}">Ver más →</a></td>
       </tr>
       {% endfor %}

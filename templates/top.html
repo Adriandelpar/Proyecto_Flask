@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block titulo %}Top 5 – GeoWorld{% endblock %}
+
+{% block contenido %}
+<div class="detail-card">
+  <h1>Top 5 países más poblados</h1>
+  <p class="result-count">Ordenados por población de la capital</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>País</th>
+        <th>Capital</th>
+        <th>Población</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in top5 %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ p.nombre }}</td>
+        <td>{{ p.capital.nombre }}</td>
+        <td>{{ "{:,}".format(p.capital.poblacion) }} hab.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

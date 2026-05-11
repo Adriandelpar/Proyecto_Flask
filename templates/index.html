@@ -8,5 +8,10 @@
     <img src="{{ url_for('static', filename='logo.svg') }}" alt="GeoWorld logo" class="hero-logo">
     <p class="hero-hint">Haz clic para explorar los países</p>
   </a>
+
+  <a href="{{ url_for('top') }}">
+    <img src="{{ url_for('static', filename='top5.png') }}" alt="Top 5" class="hero-logo">
+    <p class="hero-hint">Haz clic para ver top 5 de poblacion de la capital</p>
+  </a>
 </section>
 {% endblock %}
